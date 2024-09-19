@@ -1,0 +1,10 @@
+services:
+    python:
+        image: ex01/python:3.11
+        build: ./python
+        container_name: 'MLB-Player-Digital-Engagement-Forecasting'
+        stdin_open: true
+        tty: true
+        working_dir: '/tmp/work'
+        volumes:
+            - ../python:/tmp/work
